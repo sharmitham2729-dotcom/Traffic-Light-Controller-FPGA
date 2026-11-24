@@ -1,0 +1,10 @@
+Expected repeating output sequence (1 = lamp ON)
+Bit order: NS_RED NS_YELLOW NS_GREEN | EW_RED EW_YELLOW EW_GREEN
+1. NS green:  0 0 1 | 1 0 0 (10 seconds)
+2. NS yellow: 0 1 0 | 1 0 0 (3 seconds)
+3. All red:   1 0 0 | 1 0 0 (1 second)
+4. EW green:  1 0 0 | 0 0 1 (10 seconds)
+5. EW yellow: 1 0 0 | 0 1 0 (3 seconds)
+6. All red:   1 0 0 | 1 0 0 (1 second)
+7. Repeat.
+Safety: NS_GREEN and EW_GREEN must never be active simultaneously.
